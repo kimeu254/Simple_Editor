@@ -65,12 +65,13 @@ class _DetailPageState extends State<DetailPage> {
         body: Container(
           width: 1885,
           height: 782,
-          child: Center(
+          child: InteractiveViewer(
+              child: Center(
             child: Text(
               widget.model.text.toString(),
               style: const TextStyle(),
             ),
-          ),
+          )),
         ));
   }
 }
